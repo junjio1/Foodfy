@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+
+{% block  head %}
+<title>Receitas </title>
+{% endblock %}
+
+{% block content %}
+
+    <section id="cards">
+
+
+        {% for card in cards%}
+            <div class="card" id="{{card.id}}">
+                <div class="image_container">
+                    <img src="assets\{{card.id}}" alt="{{card.title}}">
+                </div>
+                <div class="card_content">
+                    <h2>{{card.title}}</h2>
+                </div>
+                <div class="card_info">
+                    <p>{{card.author}}</p>
+
+                </div>
+
+            </div>
+            {% endfor %}
+        
+
+        
+    </section>
+
+
+    <section class="modal_overlay">
+        <div class="modal">
+            <div class="modal_image">
+                <img src="" alt="">
+            </div>
+            <div class="modal_content">
+                <h2></h2>
+                <p></p>
+            </div>
+            <div class="modal_close">
+                <p>Close</p>
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}
