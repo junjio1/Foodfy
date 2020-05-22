@@ -40,6 +40,9 @@ line-height: 28px;
        height: 50%;
        position: relative;
        margin-bottom: 40px;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       
 }
 
 .header_info{
@@ -59,9 +62,9 @@ line-height: 28px;
 }
 
 header img{
-    position: absolute;
-    top: 20%;
-    right: 7.1%;
+    width: 50%;
+    margin-left: 33%;
+    margin-top: 10%;
 }
 
 /* wrapper */
