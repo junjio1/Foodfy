@@ -1,0 +1,31 @@
+{% extends "layoutAdmin.njk" %}
+
+{% block content %}
+    <h3>Gerenciar de Receitas</h3>
+
+
+<section id="cards" class="admin">
+
+        {% for card in cards%}
+            <div class="card_admin" id="{{card.id}}">
+                <div class="image_container_admin">
+                    <img src="../assets\{{card.id}}" alt="{{card.title}}">
+                </div>
+                <div class="card_content_admin">
+                    <h2>{{card.title}}</h2>
+                
+                <div class="card_info_admin">
+                    <p>{{card.author}}</p>
+                </div>
+                <a href="#">vizualizar</a>
+                </div>
+                
+
+            </div>
+            {% endfor %}   
+    </section>
+  
+
+{% endblock %}
+
+

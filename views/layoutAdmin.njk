@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     {% block head %}
-        <title>Foodfy</title>
+        <title>Admin Foodfy</title>
     {%endblock%}
 
     <link rel="stylesheet" href="/style.css">
@@ -13,23 +13,16 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <a  class="logo" href="/">Foodfy</a>
-        <a class="links" href="/sobre">Sobre</a>
-        <a class="links" href="/recipes">Receitas</a>
+    <nav class="navbar_admin ">
+    <a href="/admin/recipes"> 
+    <img src="../assets/logoBranco.png" alt="logo">
+    </a>
     </nav>
 
     
 
     {% block content %}
     {% endblock %}
-
-
-
-    <footer>
-        <p>Todos direitos reservados, receitas Foodfy.</p>
-    </footer>
-
 
 
     <script src="/script.js"></script>
