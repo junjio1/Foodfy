@@ -7,7 +7,7 @@ exports.index = function (req, res) {
 
 }
 exports.create = function (req, res) {
-    return res.send("ok")
+    return res.render("admin/create")
 
 }
 exports.show = function (req, res) {
@@ -19,7 +19,7 @@ exports.edit = function (req, res) {
 
 }
 exports.post = function (req, res) {
-    return res.send("ok")
+    return res.send("Receita recebida")
 
 }
 exports.put = function (req, res) {

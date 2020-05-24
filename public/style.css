@@ -206,7 +206,7 @@ margin: 0 0 0 0;
 
 
 
-/* Admin */
+/* *****Admin****** */
 
 /* nav */
 .navbar_admin{
@@ -255,6 +255,57 @@ margin: 0 0 0 0;
     font-weight: bold;
 }
 
+
+/*  ADMIM FORM */
+form .item{
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+form .item a{
+    text-decoration: none;
+    color: #6558C3;
+}
+
+.form_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.form_header div{
+    text-align: right;
+}
+
+button[type="submit"] {
+    background: #6558C3;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    
+
+}
+
+input{
+    width: 100%;
+    height: 5%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+form .item:last-child:last-child div {
+    width: 100%;
+    
+}
+.item div textarea{
+    resize: none;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+}
 
 
 
