@@ -19,7 +19,7 @@ exports.edit = function (req, res) {
 
 }
 exports.post = function (req, res) {
-    return res.send("Receita recebida")
+    return res.send(req.body)
 
 }
 exports.put = function (req, res) {

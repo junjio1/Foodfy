@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<form method="post" class="create_recipe" action="admin/recipes" id="create_recipe" >
+<form method="POST" action="/admin/recipes" id="create_recipe" >
 
     <div class="form_header">   
         <h2>Criando Receitas</h2> 
@@ -52,12 +52,13 @@
         <div class="item">
             <div>Informacoes Adicionais</div>
             <div> 
-                <textarea name="" id="create_recipe" cols="" rows="10"></textarea>
+                <textarea name="create_recipe" cols="" rows="10"></textarea>
             </div>
         </div>
-    
 
 </form>
+
+
 
 {% endblock %}
 
