@@ -30,46 +30,45 @@
         <div>Nome da Receita</div>
         <div> 
             <input 
-                type="txt"
+                type="text"
                 name="recipe_name"
              >
         </div>
     </div>
 
-
+    <div id="ingredients">
         <div class="item">
             <div>Ingredientes</div>
-            <div> 
+            <div class="ingredient"> 
                 <input 
-                    type="txt"
-                    name="ingredients"
-             >
+                    type="text"
+                    name="ingredients[]"
+                >
             </div>
-        <a href="">Adiciornar novo incrediente</a>
         </div>
+    </div>
+    <span class="add-ingredient">Adiciornar novo incrediente</span>
 
+    <div id="preparations">
         <div class="item">
             <div>Modo de Preparo</div>
-                <div> 
+                <div class="preparation"> 
                     <input 
-                        type="txt"
-                        name="preparation"
+                        type="text"
+                        name="preparation[]"
                     >
                 </div>
-            <a href="">Adiciornar novo passo</a>
         </div>
-
+    </div>  
+    <span class="add-preparation" >Adiciornar novo passo</span>
+    
         <div class="item">
             <div>Informacoes Adicionais</div>
             <div> 
-                <textarea name="create_recipe" cols="" rows="10"></textarea>
+                <textarea  form="create_recipe" name="information" cols="" rows="10"></textarea>
             </div>
         </div>
 
 </form>
 
-
-
 {% endblock %}
-
-

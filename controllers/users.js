@@ -19,7 +19,7 @@ exports.recipeIndex = function(req, res){
     const recipeIndex = req.params.index;
     const recipe = recipes[recipeIndex]   
     
-    if (!recipeIndex){
+    if (!recipe){
         return res.send("Recipe not found")
     }
 
