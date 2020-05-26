@@ -1,0 +1,18 @@
+{
+  "recipes": [
+    {
+      "recipe_url": "http://localhost:5000/admin/recipes/create",
+      "recipe_name": "asdasd",
+      "ingredients": "asdasasdas",
+      "preparation": "asdadasdas",
+      "create_recipe": "asdasddasd"
+    },
+    {
+      "recipe_url": "http://localhost:5000/admin/recipes/create",
+      "recipe_name": "adsas",
+      "ingredients": "asdas",
+      "preparation": "asda",
+      "create_recipe": "sdasdas"
+    }
+  ]
+}
