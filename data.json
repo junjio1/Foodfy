@@ -1,32 +1,4 @@
 {
   "recipes": [
-    {
-      "recipe_url": "http://localhost:5000/admin/recipes/create",
-      "recipe_name": "dasdas",
-      "ingredients": [
-        "Ingredientes",
-        "Ingredientes",
-        "Ingredientes",
-        "Ingredientes",
-        "Ingredientes"
-      ],
-      "preparation": [
-        "Ingredientes"
-      ],
-      "information": "IngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientesIngredientes"
-    },
-    {
-      "recipe_url": "http://localhost:5000/admin/recipes/create",
-      "recipe_name": "asd",
-      "ingredients": [
-        "AScsadasd"
-      ],
-      "preparation": [
-        "asdasd",
-        "asdasd",
-        "asd"
-      ],
-      "information": "asdas"
-    }
   ]
 }

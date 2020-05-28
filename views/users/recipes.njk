@@ -8,17 +8,16 @@
 
     <section id="cards">
 
-
-        {% for card in cards%}
-            <div class="card" id="{{card.id}}">
+        {% for recipe in recipes %}
+            <div class="card" id="{{recipe.id}}">
                 <div class="image_container">
-                    <img src="assets\{{card.id}}" alt="{{card.title}}">
+                    <img src="{{recipe.image}}" alt="{{recipe.title}}">
                 </div>
                 <div class="card_content">
-                    <h2>{{card.title}}</h2>
+                    <h2>{{recipe.title}}</h2>
                 </div>
                 <div class="card_info">
-                    <p>{{card.author}}</p>
+                    <p>{{recipe.author}}</p>
 
                 </div>
 
@@ -27,24 +26,6 @@
         
 
         
-    </section>
-
-
-    <section class="modal_overlay">
-        <div class="modal">
-            <div class="modal_image">
-                <img src="" alt="">
-            </div>
-            <div class="modal_content">
-                <h2></h2>
-                <p></p>
-            </div>
-            <div class="modal_close">
-                <p>Close</p>
-            </div>
-
-        </div>
-
     </section>
 
 {% endblock %}

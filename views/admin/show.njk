@@ -1,7 +1,14 @@
 {% extends "layoutAdmin.njk" %}
 
 {% block content %}
-    <h3>Detalhe da Receitas</h3>
+
+
+    <div class="form_header">   
+        <h2>Receita {{recipe.title }}</h2> 
+        <div>
+            <button type="submit">Editar Receita</button>
+        </div>
+    </div>
 
 <section class="recipes">
                 <div class="recipe-image">

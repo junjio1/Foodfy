@@ -36,8 +36,6 @@ line-height: 28px;
 .header_content{
        background: #FBDFDB;
        border-radius: 30px;
-       border-radius: 30px;
-       height: 50%;
        position: relative;
        margin-bottom: 40px;
        display: grid;
@@ -80,16 +78,18 @@ header img{
 .image_container img{
     width: 100%;
     border-radius: 15px;
-    border-radius: 15px;
+    image-rendering: pixelated;
+    height: 140;
 }
 
 .card_content h2{
     font-size: 18px;
-    margin:25px 0 0 0;
+    margin:16px 0 0 0;
 }
 .card_info p{
     font-size: 14px;
     color: #777777;
+    margin: 0;
 }
 
 
@@ -214,7 +214,7 @@ margin: 0 0 0 0;
     padding: 16px;
 }
 
-/* cards */
+/* cards  admin */
 
 #cards.admin {
     display: grid;

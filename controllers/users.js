@@ -3,11 +3,11 @@ const recipes =  require("../data")
 
 
 exports.indexPage = function(req, res ){
-    return res.render("users/index",{cards: cards})
+    return res.render("users/index",{recipes: recipes})
 }
 
 exports.recipePage = function(req, res){
-    return res.render("users/recipes", {cards:cards})
+    return res.render("users/recipes", {recipes:recipes})
 }
 
 exports.sobrePage = function(req, res){
