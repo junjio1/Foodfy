@@ -18,13 +18,14 @@ exports.create = function (req, res) {
 exports.show = function (req, res) {
 
     const recipeIndex = req.params.index;
-    const recipe = data.recipes[recipeIndex]   
+    const recipe = data.recipes[recipeIndex] 
+    
     
     if (!recipe){
         return res.send("Recipe not found")
     }
 
-    return res.render("admin/show", {recipe})
+    return res.render("admin/show", {recipe, recipeIndex})
 
 }
 exports.edit = function (req, res) {
