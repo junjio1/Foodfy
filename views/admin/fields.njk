@@ -1,0 +1,76 @@
+
+    <div class="item">
+        <div>Imagem da Receita</div>
+        <div> 
+            <input 
+                type="url"
+                name="recipe_url"
+                value="{{recipe.recipe_url}}"
+             >
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Nome da Receita</div>
+        <div> 
+            <input 
+                type="text"
+                name="recipe_name"
+                value="{{recipe.recipe_name}}"
+             >
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Criado por</div>
+        <div> 
+            <input 
+                type="text"
+                name="recipe_author"
+                value="{{recipe.recipe_author}}"
+             >
+        </div>
+    </div>
+
+    <div id="ingredients">
+        <div class="item">
+            <div>Ingredientes</div>
+            <div class="ingredient"> 
+            {% for ingredient in recipe.ingredients %}
+                <input 
+                    type="text"
+                    name="ingredients[]"
+                    value="{{ingredient}}"
+                >
+            {% endfor %}    
+            </div>
+        </div>
+    </div>
+    <span class="add-ingredient">Adiciornar novo incrediente</span>
+
+    <div id="preparations">
+        <div class="item">
+            <div>Modo de Preparo</div>
+                <div class="preparation"> 
+                {% for prep in recipe.preparation %}
+                    <input 
+                        type="text"
+                        name="preparation[]"    
+                        value="{{prep}}"
+                    >
+                {% endfor %}
+                </div>
+        </div>
+    </div>  
+    <span class="add-preparation" >Adiciornar novo passo</span>
+    
+    <div class="item">
+        <div>Informacoes Adicionais</div>
+        <div> 
+            <textarea  
+            form="create_recipe" 
+            name="information" 
+            cols="" 
+            rows="10">{{recipe.information}}</textarea>
+        </div>
+    </div>

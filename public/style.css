@@ -285,7 +285,7 @@ form span{
 }
 
 button[type="submit"],
-.create_recipe {
+.button {
     background: #6558C3;
     color: white;
     border-radius: 5px;
@@ -295,8 +295,12 @@ button[type="submit"],
     cursor: pointer;
 }
 
-.create_recipe{
+.button{
     text-decoration: none;
+}
+
+.delete{
+    background-color: #DC4747;
 }
 
 input{

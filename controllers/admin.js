@@ -21,14 +21,22 @@ exports.show = function (req, res) {
     const recipe = data.recipes[recipeIndex]   
     
     if (!recipe){
-        return res.send("REcipe not found")
+        return res.send("Recipe not found")
     }
 
     return res.render("admin/show", {recipe})
 
 }
 exports.edit = function (req, res) {
-    return res.send("ok")
+    
+    const recipeIndex = req.params.index;
+    const recipe = data.recipes[recipeIndex]   
+    
+    if (!recipe){
+        return res.send("Recipe not found")
+    }
+
+    return res.render("admin/edit", {recipe})
 
 }
 exports.post = function (req, res) {

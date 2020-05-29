@@ -15,69 +15,7 @@
         </div>
     </div>
 
-
-    <div class="item">
-        <div>Imagem da Receita</div>
-        <div> 
-            <input 
-                type="url"
-                name="recipe_url"
-             >
-        </div>
-    </div>
-
-    <div class="item">
-        <div>Nome da Receita</div>
-        <div> 
-            <input 
-                type="text"
-                name="recipe_name"
-             >
-        </div>
-    </div>
-
-    <div class="item">
-        <div>Criado por</div>
-        <div> 
-            <input 
-                type="text"
-                name="recipe_author"
-             >
-        </div>
-    </div>
-
-    <div id="ingredients">
-        <div class="item">
-            <div>Ingredientes</div>
-            <div class="ingredient"> 
-                <input 
-                    type="text"
-                    name="ingredients[]"
-                >
-            </div>
-        </div>
-    </div>
-    <span class="add-ingredient">Adiciornar novo incrediente</span>
-
-    <div id="preparations">
-        <div class="item">
-            <div>Modo de Preparo</div>
-                <div class="preparation"> 
-                    <input 
-                        type="text"
-                        name="preparation[]"
-                    >
-                </div>
-        </div>
-    </div>  
-    <span class="add-preparation" >Adiciornar novo passo</span>
-    
-    <div class="item">
-        <div>Informacoes Adicionais</div>
-        <div> 
-            <textarea  form="create_recipe" name="information" cols="" rows="10"></textarea>
-        </div>
-    </div>
+    {% include "admin/fields.njk" %}
 
 </form>
 
