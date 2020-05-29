@@ -34,7 +34,11 @@
                 <div class="recipes">
                   <h2>Modo de Preparo</h2>
                   <p class="btn-show two">Esconder</p>
-                  <p class='recipe-info'>{{recipe.preparation}}</p>
+                  <ul class='lista recipe-info'>
+                  {% for prep in recipe.preparation%}
+                        <li>{{prep}}</li>
+                  {% endfor %}      
+                  </ul>
                 </div>
 
 

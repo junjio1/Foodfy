@@ -24,115 +24,140 @@
       "information": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \\n\\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
     },
     {
-      "recipe_url":"https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png",
-      "recipe_name":"Pizza 4 estações",
-      "recipe_author":"Fabiana Melo",
-      "ingredients":[
-         "1 xícara (chá) de leite",
-         "1 ovo",
-         "1 colher (chá) de sal",
-         "1 colher (chá) de açúcar",
-         "1 colher (sopa) de margarina",
-         "1 e 1/2 xícara (chá) de farinha de trigo",
-         "1 colher (sobremesa) de fermento em pó",
-         "1/2 lata de molho de tomate",
-         "250 g de mussarela ralada grossa",
-         "2 tomates fatiados",
-         "azeitona picada",
-         "orégano a gosto"
+      "recipe_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png",
+      "recipe_name": "Pizza 4 estações",
+      "recipe_author": "Fabiana Melo",
+      "ingredients": [
+        "1 xícara (chá) de leite",
+        "1 ovo",
+        "1 colher (chá) de sal",
+        "1 colher (chá) de açúcar",
+        "1 colher (sopa) de margarina",
+        "1 e 1/2 xícara (chá) de farinha de trigo",
+        "1 colher (sobremesa) de fermento em pó",
+        "1/2 lata de molho de tomate",
+        "250 g de mussarela ralada grossa",
+        "2 tomates fatiados",
+        "azeitona picada",
+        "orégano a gosto"
       ],
-      "preparation":[
-         "No liquidificador bata o leite, o ovo, o sal, o açúcar, a margarina, a farinha de trigo e o fermento em pó até que tudo esteja encorporado.",
-         "Despeje a massa em uma assadeira para pizza untada com margarina e leve ao forno preaquecido por 20 minutos.",
-         "Retire do forno e despeje o molho de tomate.",
-         "Cubra a massa com mussarela ralada, tomate e orégano a gosto.",
-         "Leve novamente ao forno até derreter a mussarela."
+      "preparation": [
+        "No liquidificador bata o leite, o ovo, o sal, o açúcar, a margarina, a farinha de trigo e o fermento em pó até que tudo esteja encorporado.",
+        "Despeje a massa em uma assadeira para pizza untada com margarina e leve ao forno preaquecido por 20 minutos.",
+        "Retire do forno e despeje o molho de tomate.",
+        "Cubra a massa com mussarela ralada, tomate e orégano a gosto.",
+        "Leve novamente ao forno até derreter a mussarela."
       ],
-      "information":"Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!"
-   },
-   {
-      "recipe_url":"https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
-      "recipe_name":"Asinhas de frango ao barbecue",
-      "recipe_author":"Vania Steroski",
-      "ingredients":[
-         "12 encontros de asinha de galinha, temperados a gosto",
-         "2 colheres de sopa de farinha de trigo",
-         "1/2 xícara (chá) de óleo",
-         "1 xícara de molho barbecue"
+      "information": "Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!"
+    },
+    {
+      "recipe_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
+      "recipe_name": "Asinhas de frango ao barbecue",
+      "recipe_author": "Vania Steroski",
+      "ingredients": [
+        "12 encontros de asinha de galinha, temperados a gosto",
+        "2 colheres de sopa de farinha de trigo",
+        "1/2 xícara (chá) de óleo",
+        "1 xícara de molho barbecue"
       ],
-      "preparation":[
-         "Em uma tigela coloque o encontro de asinha de galinha e polvilhe a farinha de trigo e misture com as mãos.",
-         "Em uma frigideira ou assador coloque o óleo quando estiver quente frite até ficarem douradas.",
-         "Para servir fica bonito com salada, ou abuse da criatividade."
+      "preparation": [
+        "Em uma tigela coloque o encontro de asinha de galinha e polvilhe a farinha de trigo e misture com as mãos.",
+        "Em uma frigideira ou assador coloque o óleo quando estiver quente frite até ficarem douradas.",
+        "Para servir fica bonito com salada, ou abuse da criatividade."
       ],
-      "information":""
-   },
-   {
-      "recipe_url":"https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
-      "recipe_name":"Lasanha mac n' cheese",
-      "recipe_author":"Juliano Vieira",
-      "ingredients":[
-         "massa pronta de lasanha",
-         "400 g de presunto",
-         "400 g de mussarela ralada",
-         "2 copos de requeijão",
-         "150 g de mussarela para gratinar"
+      "information": ""
+    },
+    {
+      "recipe_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
+      "recipe_name": "Lasanha mac n' cheese",
+      "recipe_author": "Juliano Vieira",
+      "ingredients": [
+        "massa pronta de lasanha",
+        "400 g de presunto",
+        "400 g de mussarela ralada",
+        "2 copos de requeijão",
+        "150 g de mussarela para gratinar"
       ],
-      "preparation":[
-         "Em uma panela, coloque a manteiga para derreter.",
-         "Acrescente a farinha de trigo e misture bem com auxílio de um fouet.",
-         "Adicione o leite e misture até formar um creme homogêneo.",
-         "Tempere com sal, pimenta e noz-moscada a gosto.",
-         "Desligue o fogo e acrescente o creme de leite; misture bem e reserve."
+      "preparation": [
+        "Em uma panela, coloque a manteiga para derreter.",
+        "Acrescente a farinha de trigo e misture bem com auxílio de um fouet.",
+        "Adicione o leite e misture até formar um creme homogêneo.",
+        "Tempere com sal, pimenta e noz-moscada a gosto.",
+        "Desligue o fogo e acrescente o creme de leite; misture bem e reserve."
       ],
-      "information":"Recheie a lasanha com o que preferir."
-   },
-   {
-      "recipe_url":"https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png",
-      "recipe_name":"Espaguete ao alho",
-      "recipe_author":"Júlia Kinoto",
-      "ingredients":[
-         "1 pacote de macarrão 500 g (tipo do macarrão a gosto)",
-         "1 saquinho de alho granulado",
-         "1/2 tablete de manteiga (não use margarina)",
-         "1 colher (sopa) de azeite extra virgem",
-         "ervas (manjericão, orégano, salsa, cebolinha, tomilho, a gosto)",
-         "sal",
-         "1 dente de alho",
-         "gengibre em pó a gosto",
-         "1 folha de louro"
+      "information": "Recheie a lasanha com o que preferir."
+    },
+    {
+      "recipe_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png",
+      "recipe_name": "Espaguete ao alho",
+      "recipe_author": "Júlia Kinoto",
+      "ingredients": [
+        "1 pacote de macarrão 500 g (tipo do macarrão a gosto)",
+        "1 saquinho de alho granulado",
+        "1/2 tablete de manteiga (não use margarina)",
+        "1 colher (sopa) de azeite extra virgem",
+        "ervas (manjericão, orégano, salsa, cebolinha, tomilho, a gosto)",
+        "sal",
+        "1 dente de alho",
+        "gengibre em pó a gosto",
+        "1 folha de louro"
       ],
-      "preparation":[
-         "Quando faltar mais ou menos 5 minutos para ficar no ponto de escorrer o macarrão, comece o preparo da receita.",
-         "Na frigideira quente coloque a manteiga, o azeite, a folha de louro, e o alho granulado.",
-         "Nesta hora um pouco de agilidade, pois o macarrão escorrido vai para a frigideira, sendo mexido e dosado com sal a gosto, as ervas, o gengibre em pó a gosto também.",
-         "O dente de alho, serve para você untar os pratos onde serão servidos o macarrão.",
-         "Coloque as porções nos pratos já com o cheiro do alho, e enfeite com algumas ervas."
+      "preparation": [
+        "Quando faltar mais ou menos 5 minutos para ficar no ponto de escorrer o macarrão, comece o preparo da receita.",
+        "Na frigideira quente coloque a manteiga, o azeite, a folha de louro, e o alho granulado.",
+        "Nesta hora um pouco de agilidade, pois o macarrão escorrido vai para a frigideira, sendo mexido e dosado com sal a gosto, as ervas, o gengibre em pó a gosto também.",
+        "O dente de alho, serve para você untar os pratos onde serão servidos o macarrão.",
+        "Coloque as porções nos pratos já com o cheiro do alho, e enfeite com algumas ervas."
       ],
-      "information":"Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira."
-   },
-   {
-      "recipe_url":"https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png",
-      "recipe_name":"Docinhos pão-do-céu",
-      "recipe_author":"Ricardo Golvea",
-      "ingredients":[
-         "1 kg de batata - doce",
-         "100 g de manteiga",
-         "3 ovos",
-         "1 pacote de coco seco ralado (100 g)",
-         "3 colheres (sopa) de açúcar 1 lata de Leite Moça",
-         "1 colher (sopa) de fermento em pó",
-         "manteiga para untar",
-         "açúcar de confeiteiro"
+      "information": "Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira."
+    },
+    {
+      "recipe_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png",
+      "recipe_name": "Docinhos pão-do-céu",
+      "recipe_author": "Ricardo Golvea",
+      "ingredients": [
+        "1 kg de batata - doce",
+        "100 g de manteiga",
+        "3 ovos",
+        "1 pacote de coco seco ralado (100 g)",
+        "3 colheres (sopa) de açúcar 1 lata de Leite Moça",
+        "1 colher (sopa) de fermento em pó",
+        "manteiga para untar",
+        "açúcar de confeiteiro"
       ],
-      "preparation":[
-         "Cozinhe a batata-doce numa panela de pressão, com meio litro de água, por cerca de 20 minutos. Descasque e passe pelo espremedor, ainda quente.",
-         "Junte a manteiga,os ovos, o coco ralado,o açúcar, o Leite Moça e o fermento em pó, mexendo bem após cada adição.",
-         "Despeje em assadeira retangular média, untada e leve ao forno médio (180°C), por aproximadamente 45 minutos. Depois de frio, polvilhe, com o",
-         "açúcar de confeiteiro e corte em quadrados."
+      "preparation": [
+        "Cozinhe a batata-doce numa panela de pressão, com meio litro de água, por cerca de 20 minutos. Descasque e passe pelo espremedor, ainda quente.",
+        "Junte a manteiga,os ovos, o coco ralado,o açúcar, o Leite Moça e o fermento em pó, mexendo bem após cada adição.",
+        "Despeje em assadeira retangular média, untada e leve ao forno médio (180°C), por aproximadamente 45 minutos. Depois de frio, polvilhe, com o",
+        "açúcar de confeiteiro e corte em quadrados."
       ],
-      "information":""
-   }
-    
+      "information": ""
+    },
+    {
+      "recipe_url": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_960,h_1200/k%2FPhoto%2FRecipes%2F2020-01-How-to-Sourdough-Bread%2F98652-beautiful-finished-bread-LEAD_How-to-make-sourdough-bread",
+      "recipe_name": "Sourdough Bread",
+      "recipe_author": "Junji Oshiro",
+      "ingredients": [
+        "1 tablespoon active sourdough starter",
+        "75 grams all-purpose flour or bread flour (1/2 cup)",
+        "75 grams water (1/3 cup)",
+        "525 grams water (2 1/2 cups), divided",
+        "1 tablespoon salt",
+        "700 grams all-purpose flour or bread flour (5 1/2 cups)"
+      ],
+      "preparation": [
+        "Make sure your sourdough culture is active. If your sourdough has been in the refrigerator, take it out 2 to 3 days before you plan to bake. Feed it daily to make sure it's strong and very active before you make the bread.",
+        "Make the leaven and let it sit overnight. The night before you plan to make the dough, place all the leaven ingredients in a large bowl and mix thoroughly to form a thick batter. Cover and let stand at room temperature overnight, about 12 hours.",
+        "Test that the leaven is ready. Generally, if the surface of the leaven is very bubbly, it's ready to be used. To double check, drop a small spoonful of the leaven in a cup of water; if the leaven floats, it's ready.",
+        "Dissolve the salt. Place 50 grams (about 1/4 cup) of the water and the salt for the dough in a small bowl. Set aside, stirring occasionally to make sure the salt dissolves.",
+        "Mix the leaven and water. Add the remaining 475 grams (2 cups) of water for the dough to the bowl of leaven. Stir with a spatula or use your hands to break up and dissolve the leaven into the water. It's OK if the leaven doesn't fully dissolve and a few clumps remain.",
+        "Add the flour. Add the flour and stir with a rubber spatula until there are no more bits of dry flour and it forms a very shaggy dough.",
+        "Rest the dough (30 minutes, or up to 4 hours). Cover the bowl with plastic wrap or a clean kitchen towel. Let the dough rest for at least 30 minutes or up to 4 hours. This is the autolyse stage where the flour is fully absorbing the water and enzymes in the flour begin breaking down the starches and proteins.",
+        "Mix in the salt. Pour the dissolved salt over the dough. Work the liquid and salt into the dough by pinching and squeezing the dough. The dough will feel quite wet and loose at this point.",
+        "Begin folding the dough (2 1/2 hours). To fold the dough, grab the dough at one side, lift it up, and fold it over on top of itself. Fold the dough four times, moving clockwise from the top of the bowl (or giving the bowl a quarter turn in between folds). Let the dough rest 30 minutes, then repeat. Do this a total of 6 times, every half hour, for a total of 2 1/2 hours. The dough will start out shaggy and very loose, but will gradually smooth out and become tighter as you continue folding.",
+        "Let the dough rise undisturbed (30 to 60 minutes). Once you've finished the folds, cover and let the dough rise undisturbed for 30 to 60 minutes, until it looks slightly puffed. This dough won't double in size the way regular, non-sourdough breads will; it should just look larger than it did when you started."
+      ],
+      "information": "Whole-wheat sourdough: You can replace up to half of the all-purpose flour with whole-wheat or whole-grain flour.\r\n\r\nAll-purpose vs. bread flour: Bread flour will give your bread a sturdier, chewier texture and a loaf that's easier to slice. Loaves made with all-purpose flour will be a bit more delicate, especially when you cut them, but still work just fine.\r\n\r\nIf your loaf sticks to the proofing basket: This still happens to me all the time! It's annoying, but not the end of your sourdough dreams. If some of the dough stays stuck to the lining of the proofing basket, try to gently disengage it or pinch it away with your fingers. Fold a pinch of dough over the tear and bake as usual. The crust will look a little rough where it was torn, but the bread will still taste delicious.\r\n\r\nStorage: Bread can be stored at room temperature (cut-side down if cut) in a paper bag for up to 3 days, or well wrapped in plastic wrap and frozen for up to 2 months."
+    }
   ]
 }

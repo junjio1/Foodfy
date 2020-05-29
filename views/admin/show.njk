@@ -12,7 +12,8 @@
 
 <section class="recipes">
                 <div class="recipe-image">
-                        <img src="{{recipe.recipe_url}}" alt="{{recipe.recipe_name}}">
+                        <img src="{{recipe.recipe_url}}" alt="{{recipe.recipe_name}}"
+                        style="background: no-repeat center center/ cover;">
                 </div>
                 <div class="recipe-title">
                         <h2>{{recipe.recipe_name}}</h2>
@@ -31,11 +32,12 @@
                         
                 </div>
 
-                
-
                 <div class="recipes">
-                  <h2>Modo de Preparo</h2>
-                  <p class='recipe-info'>{{recipe.preparation}}</p>
+                        <h2>Modo de Preparo</h2>
+                         <ul class='lista recipe-info'>
+                        {% for prep in recipe.preparation %}
+                                <li>{{prep}}</li>
+                        {% endfor %}
                 </div>
 
 

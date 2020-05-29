@@ -315,6 +315,7 @@ form .item:last-child:last-child div {
     resize: none;
     width: 100%;
     border: 1px solid #DDDDDD;
+    white-space: pre-wrap;
 }
 
 
