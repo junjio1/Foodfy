@@ -1,8 +1,14 @@
 {% extends "layoutAdmin.njk" %}
 
 {% block content %}
-    <h3>Gerenciar de Receitas</h3>
 
+
+    <div class="form_header">   
+        <h2>Gerenciar Receitas</h2> 
+        <div>
+            <a class="create_recipe" href="/admin/recipes/create">Criar Receita</a>
+        </div>
+    </div>
 
 <section id="cards" class="admin">
 
@@ -17,7 +23,7 @@
                 <div class="card_info_admin">
                     <p>{{recipe.recipe_author}}</p>
                 </div>
-                <span href="#">Vizualizar</span>
+                <span>Vizualizar</span>
                 </div>
                 
 
