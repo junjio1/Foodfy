@@ -6,18 +6,18 @@
 
 <section id="cards" class="admin">
 
-        {% for card in cards%}
-            <div class="card_admin" id="{{card.id}}">
+        {% for recipe in recipes %}
+            <div class="card_admin" id="{{recipes.recipe_title}}">
                 <div class="image_container_admin">
-                    <img src="../assets\{{card.id}}" alt="{{card.title}}">
+                    <img src="{{recipe.recipe_url}}" alt="{{recipe.recipe_title}}">
                 </div>
                 <div class="card_content_admin">
-                    <h2>{{card.title}}</h2>
+                    <h2>{{recipe.recipe_name}}</h2>
                 
                 <div class="card_info_admin">
-                    <p>{{card.author}}</p>
+                    <p>{{recipe.recipe_author}}</p>
                 </div>
-                <a href="/admin/recipes/1">Vizualizar</a>
+                <span href="#">Vizualizar</span>
                 </div>
                 
 

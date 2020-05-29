@@ -2,13 +2,13 @@ const fs =  require("fs")
 
 const data = require("../data.json")
 
-const cards = require("../card_data")
-const recipes =  require("../data")
+// const cards = require("../card_data")
+// const recipes =  require("../data")
 
 
 
 exports.index = function (req, res) {
-    return res.render("admin/index", {cards : cards})
+    return res.render("admin/index", {recipes : data.recipes})
 
 }
 exports.create = function (req, res) {
@@ -18,7 +18,7 @@ exports.create = function (req, res) {
 exports.show = function (req, res) {
 
     const recipeIndex = req.params.index;
-    const recipe = recipes[recipeIndex]   
+    const recipe = data.recipes[recipeIndex]   
     
     if (!recipe){
         return res.send("REcipe not found")

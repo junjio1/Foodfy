@@ -1,13 +1,13 @@
-const cards = require("../card_data")
-const recipes =  require("../data")
-
+// const cards = require("../card_data")
+// const recipes =  require("../data")
+const  data  = require("../data.json")
 
 exports.indexPage = function(req, res ){
-    return res.render("users/index",{recipes: recipes})
+    return res.render("users/index",{recipes: data.recipes})
 }
 
 exports.recipePage = function(req, res){
-    return res.render("users/recipes", {recipes:recipes})
+    return res.render("users/recipes", {recipes: data.recipes})
 }
 
 exports.sobrePage = function(req, res){
@@ -17,7 +17,7 @@ exports.sobrePage = function(req, res){
 exports.recipeIndex = function(req, res){
 
     const recipeIndex = req.params.index;
-    const recipe = recipes[recipeIndex]   
+    const recipe = data.recipes[recipeIndex]   
     
     if (!recipe){
         return res.send("Recipe not found")

@@ -9,15 +9,15 @@
     <section id="cards">
 
         {% for recipe in recipes %}
-            <div class="card" id="{{recipe.id}}">
+            <div class="card" id="{{recipe.recipe_name}}">
                 <div class="image_container">
-                    <img src="{{recipe.image}}" alt="{{recipe.title}}">
+                    <img src="{{recipe.recipe_url}}" alt="{{recipe.recipe_name}}">
                 </div>
                 <div class="card_content">
-                    <h2>{{recipe.title}}</h2>
+                    <h2>{{recipe.recipe_name}}</h2>
                 </div>
                 <div class="card_info">
-                    <p>{{recipe.author}}</p>
+                    <p>{{recipe.recipe_author}}o</p>
 
                 </div>
 

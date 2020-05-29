@@ -79,7 +79,7 @@ header img{
     width: 100%;
     border-radius: 15px;
     image-rendering: pixelated;
-    height: 140;
+    height: 140px;
 }
 
 .card_content h2{
@@ -231,6 +231,8 @@ margin: 0 0 0 0;
     border-radius: 10px;
     background-position: center;
     background-size: cover;
+    height: 100px;
+    image-rendering: pixelated;
     
 }
 
@@ -249,10 +251,12 @@ margin: 0 0 0 0;
     margin: 0;
 }
 
-.card_content_admin a {
+.card_content_admin span {
     font-size: 14px;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
+    color: #6558C3;
 }
 
 
