@@ -42,6 +42,11 @@
                     name="ingredients[]"
                     value="{{ingredient}}"
                 >
+                {% else %}
+                <input 
+                    type="text"
+                    name="ingredients[]"
+                >
             {% endfor %}    
             </div>
         </div>
@@ -58,6 +63,12 @@
                         name="preparation[]"    
                         value="{{prep}}"
                     >
+                    {% else %}
+                    <input 
+                        type="text"
+                        name="preparation[]"    
+                    >
+
                 {% endfor %}
                 </div>
         </div>
