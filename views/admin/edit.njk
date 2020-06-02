@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<form method="POST" action="/admin/recipes" id="create_recipe" >
+<form method="POST" action="/admin/recipes/{{recipeIndex}}?_method=PUT" id="create_recipe" >
 
 <div class="form_header">   
         <h2>Criando Receitas</h2> 

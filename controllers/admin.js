@@ -37,7 +37,7 @@ exports.edit = function (req, res) {
         return res.send("Recipe not found")
     }
 
-    return res.render("admin/edit", {recipe})
+    return res.render("admin/edit", {recipe, recipeIndex})
 
 }
 exports.post = function (req, res) {
@@ -59,7 +59,30 @@ exports.post = function (req, res) {
 
 }
 exports.put = function (req, res) {
-    return res.send("ok")
+
+    const recipeIndex = req.params.index;
+    const recipe = data.recipes[recipeIndex]   
+    
+    if (!recipe){
+        return res.send("Recipe not found")
+    }
+    
+
+    const updateRecipe = {
+        ...recipe,
+        ...req.body
+    }
+    
+    console.log(updateRecipe)
+
+    data.recipes[recipeIndex] = updateRecipe
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
+        if(err) return res.send("Write Error.")
+
+        return res.redirect(`/admin/recipes/${recipeIndex}`)
+    })
+
 
 }
 exports.delete = function (req, res) {
