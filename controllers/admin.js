@@ -73,7 +73,6 @@ exports.put = function (req, res) {
         ...req.body
     }
     
-    console.log(updateRecipe)
 
     data.recipes[recipeIndex] = updateRecipe
 
@@ -86,6 +85,16 @@ exports.put = function (req, res) {
 
 }
 exports.delete = function (req, res) {
-    return res.send("ok")
+    const recipeIndex = req.params.index
+
+    data.recipes.splice([recipeIndex])
+
+    const newData = data
+
+    fs.writeFile("data.json", JSON.stringify(newData, null, 2), function(err){
+        if(err) return res.send("Write Error.")
+
+        return res.redirect(`/admin/recipes`)
+    })
 
 }

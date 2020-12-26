@@ -299,7 +299,7 @@ button[type="submit"],
     text-decoration: none;
 }
 
-.delete{
+.button.delete{
     background-color: #DC4747;
 }
 
