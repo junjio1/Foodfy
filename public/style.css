@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
 
 body{
-    margin: 0 19%;
+    margin: 0 10%;
     font-family: Roboto;
 }
 p{
@@ -155,7 +155,7 @@ margin: 0 0 0 0;
 
 .recipe-image img{
     border-radius: 15px;
-    max-width: 940px;
+    max-width: 100%;
     width: 100%;
     
 }
@@ -271,6 +271,7 @@ form span{
     font-weight: bold;
     margin-top: 8px;
     cursor: pointer;
+    margin-right: 2%;
 }
 
 .form_header {

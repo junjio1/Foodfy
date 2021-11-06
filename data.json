@@ -161,19 +161,15 @@
     },
     {
       "recipe_url": "http://localhost:5000/admin/recipes/create",
-      "recipe_name": "dasdsa",
-      "recipe_author": "asd",
+      "recipe_name": "erro 4004 furacao",
+      "recipe_author": "1",
       "ingredients": [
-        "asdas",
-        "",
-        ""
+        "asdasdasdasdasd"
       ],
       "preparation": [
-        "asdas",
-        "asda",
-        "asdas"
+        "1asdasd"
       ],
-      "information": "asdasdsadasdasdas"
+      "information": "asd"
     }
   ]
 }
