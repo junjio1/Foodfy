@@ -1,0 +1,97 @@
+
+    <div class="item">
+        <div>Imagem da Receita</div>
+        <div> 
+            <input 
+                type="url"
+                name="image"
+                value="{{recipe.recipe_url}}"
+             >
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Nome da Receita</div>
+        <div> 
+            <input 
+                type="text"
+                name="title"
+                value="{{recipe.recipe_name}}"
+             >
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Criado por</div>
+        <div> 
+            <input 
+                type="text"
+                name="author"
+                value="{{recipe.recipe_author}}"
+             >
+        </div>
+    </div>
+
+    <div id="ingredients">
+        <div class="item">
+            <div>Ingredientes</div>
+             
+            {% for ingredient in recipe.ingredients %}
+                <div class="ingredient">
+                    <input 
+                    type="text"
+                    name="ingredients[]"
+                    value="{{ingredient}}"
+                >
+                </div>
+                {% else %}
+                <div class="ingredient"> 
+                <input 
+                    type="text"
+                    name="ingredients[]"
+                >
+            {% endfor %}    
+            </div>
+        </div>
+    </div>
+    <span class="add-ingredient">Adiciornar novo ingrediente</span>
+    <span class="exclude-ingredient">Deletar ultimo ingrediente </span>
+
+    <div id="preparations">
+        <div class="item">
+            <div>Modo de Preparo</div>
+                
+                {% for prep in recipe.preparation %}
+                    <div class="preparation">
+                        <input 
+                        type="text"
+                        name="preparation[]"    
+                        value="{{prep}}"
+                    >
+                    </div>
+                    {% else %}
+                    <div class="preparation"> 
+                    <input 
+                        type="text"
+                        name="preparation[]"    
+                    >
+
+                {% endfor %}
+                </div>
+        </div>
+    </div>  
+    <span class="add-preparation" >Adiciornar novo passo</span>
+    <span class="exclude-preparation">Deletar ultimo passo </span>
+    
+    <div class="item">
+        <div>Informacoes Adicionais</div>
+        <div> 
+            <textarea  
+            form="create_recipe" 
+            name="information" 
+            cols="" 
+            rows="10">{{recipe.information}}</textarea>
+        </div>
+    </div>
+
+     <script src="/adminScript.js"></script>

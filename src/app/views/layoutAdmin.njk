@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% block head %}
+        <title>Admin Foodfy</title>
+    {%endblock%}
+
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar_admin ">
+    <a href="/admin/recipes"> 
+    <img src="/assets/logoBranco.png" alt="logo">
+    </a>
+    <a href = "/admin/recipes">RECEITAS</a>
+    <a href=""> CHEFS</a>
+    </nav>
+
+    
+
+    {% block content %}
+    {% endblock %}
+
+
+    <script src="/adminScript.js"></script>
+
+
+</body>
+
+</html>
