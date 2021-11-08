@@ -7,8 +7,12 @@ const {date} = require("../../lib/utils")
 
 module.exports = {
     index(req, res){
+        db.query(`SELECT * FROM recipes`, function(err, results ){
+            if(err) throw`Database err ${err}`
 
-        return res.render("admin/index", {recipes : data.recipes})
+            return res.render("admin/index", {recipes : results.rows})
+        })
+        
 
     },
     create(req, res){
@@ -77,17 +81,10 @@ module.exports = {
 
         db.query(query , values, function(err, results){
             if(err) throw`Database err ${err}`
+            console.log(results)
             return res.redirect("/admin/recipes")
         } )
     
-        // data.recipes.push(req.body)
-    
-        // fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
-        //     if (err) return res.send("Write file error")
-    
-        //     return res.redirect("/admin/recipes")
-        // })
-
     },
 
     put(req, res){
