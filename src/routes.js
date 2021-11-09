@@ -2,7 +2,7 @@ const express = require('express')
 const routes = express.Router()
 
 
-const admin = require("./app/controllers/admin")
+const admins = require("./app/controllers/admins")
 const users = require("./app/controllers/users")
 
 
@@ -15,14 +15,14 @@ routes.get("/recipes/:index", users.recipeIndex)
 
 
 // ADMIN
-routes.get("/admin/recipes", admin.index); // Mostrar a lista de receitas
-routes.get("/admin/recipes/create",admin.create); // Mostrar formulário de nova receita
-routes.get("/admin/recipes/:index", admin.show); // Exibir detalhes de uma receita
-routes.get("/admin/recipes/:index/edit", admin.edit); // Mostrar formulário de edição de receita
+routes.get("/admin/recipes", admins.index); // Mostrar a lista de receitas
+routes.get("/admin/recipes/create",admins.create); // Mostrar formulário de nova receita
+routes.get("/admin/recipes/:index", admins.show); // Exibir detalhes de uma receita
+routes.get("/admin/recipes/:index/edit", admins.edit); // Mostrar formulário de edição de receita
 
-routes.post("/admin/recipes", admin.post); // Cadastrar nova receita
-routes.put("/admin/recipes/:index", admin.put); // Editar uma receita
-routes.delete("/admin/recipes/:index", admin.delete); // Deletar uma receita
+routes.post("/admin/recipes", admins.post); // Cadastrar nova receita
+routes.put("/admin/recipes/:index", admins.put); // Editar uma receita
+routes.delete("/admin/recipes/:index", admins.delete); // Deletar uma receita
 
 
 

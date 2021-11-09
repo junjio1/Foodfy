@@ -4,7 +4,7 @@
 
 
     <div class="form_header">   
-        <h2>Receita {{recipe.recipe_name }}</h2> 
+        <h2>Receita {{recipe.title }}</h2> 
         <div>
             <a href="{{recipeIndex}}/edit" class="button">Editar Receita</a>
         </div>
@@ -12,14 +12,14 @@
 
 <section class="recipes">
                 <div class="recipe-image">
-                        <img src="{{recipe.recipe_url}}" alt="{{recipe.recipe_name}}"
+                        <img src="{{recipe.image}}" alt="{{recipe.title}}"
                         style="background: no-repeat center center/ cover;">
                 </div>
                 <div class="recipe-title">
-                        <h2>{{recipe.recipe_name}}</h2>
+                        <h2>{{recipe.title}}</h2>
                 </div>
                 <div class="recipe-author">
-                        <p>Por {{recipe.recipe_author}}</p>
+                        <p>Por {{recipe.author}}</p>
                 </div>
 
                 <div class="recipes">
