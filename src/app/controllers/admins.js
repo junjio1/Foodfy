@@ -64,14 +64,10 @@ module.exports = {
     },
 
     put(req, res){
+        console.log(req.body)
+        Admin.update(req.body, function(){
 
-    const recipeIndex = req.params.index;
-
-        Admin.update(req.body, function(recipe){
-              if (!recipe){
-            return res.send("Recipe not found")
-        }
-        return res.redirect(`/admin/recipes/${recipeIndex}`)
+        return res.redirect(`/admin/recipes/${req.body.id}`)
         })
     
 
