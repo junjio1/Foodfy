@@ -48,5 +48,36 @@ module.exports = {
             
             
         })
+    },
+    update(data ,callback){
+        const query = `
+        UPDATE recipes SET
+            image = ($1),
+            title = ($2),
+            author = ($3),
+            ingredients = ($4),
+            preparation = ($5),
+            information = ($6),
+            created_at = ($7)
+        WHERE id = $8
+        `
+
+        const values = [
+            data.image,
+            data.title,
+            data.author,
+            data.ingredients,
+            data.preparation,
+            data.information,
+            date(Date.now()).iso,
+            data.id
+        ]
+
+
+        db.query(query , values ,function(err, results){
+            if(err) throw`Database err ${err}`
+            callback()
+
+        } )
     }
 }

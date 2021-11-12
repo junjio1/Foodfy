@@ -16,6 +16,11 @@
     </div>
     
     {% include 'admin/fields.njk' %}
+                
+    <input 
+        type="hidden" 
+        name="id" 
+        value="{{ recipe.id }}">
 
 </form>
 

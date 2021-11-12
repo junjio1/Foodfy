@@ -19,7 +19,6 @@ module.exports = {
     show(req, res){
 
         const recipeIndex = req.params.index;
-        
 
         Admin.find(recipeIndex , function(recipe){
              if (!recipe){
@@ -66,12 +65,14 @@ module.exports = {
 
     put(req, res){
 
-    // const recipeIndex = req.params.index;
-    // const recipe = data.recipes[recipeIndex]   
-    
-    //     if (!recipe){
-    //         return res.send("Recipe not found")
-    //     }
+    const recipeIndex = req.params.index;
+
+        Admin.update(req.body, function(recipe){
+              if (!recipe){
+            return res.send("Recipe not found")
+        }
+        return res.redirect(`/admin/recipes/${recipeIndex}`)
+        })
     
 
     // const updateRecipe = {
@@ -85,9 +86,9 @@ module.exports = {
     // fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
     //     if(err) return res.send("Write Error.")
 
-    //     return res.redirect(`/admin/recipes/${recipeIndex}`)
+   
     // })
-    return
+
 
     },
 
