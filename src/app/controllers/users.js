@@ -5,7 +5,10 @@ const User = require("../models/user")
 
 module.exports = {
     indexPage(req , res){
-        return res.render("users/index",{recipes: data.recipes})
+        User.all(function(recipes){
+            return res.render("users/index",{recipes})
+        })
+        
     },
     recipePage(req , res) {
         return res.render("users/recipes", {recipes: data.recipes})
