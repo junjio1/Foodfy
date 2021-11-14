@@ -11,7 +11,10 @@ module.exports = {
         
     },
     recipePage(req , res) {
-        return res.render("users/recipes", {recipes: data.recipes})
+        User.all(function(recipes){
+            return res.render("users/recipes", {recipes})
+        })
+        
     },
     sobrePage(req, res){
         return res.render("users/sobre")
