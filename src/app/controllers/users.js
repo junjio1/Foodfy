@@ -1,6 +1,7 @@
 // const cards = require("../card_data")
 // const recipes =  require("../data")
 const  data  = require("../../../data.json")
+const User = require("../models/user")
 
 module.exports = {
     indexPage(req , res){
