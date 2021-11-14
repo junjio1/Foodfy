@@ -26,7 +26,7 @@ module.exports = {
         if (!recipe){
             return res.send("Recipe not found")
         }
-    
+        
         return res.render("users/preparo", {recipe})
     }
 }

@@ -21,7 +21,8 @@
     <section id="cards">
 
         {% for recipe in recipes %}
-            <div class="card" id="{{recipe.title}}">
+            <div  class="card" id="{{recipe.title}}">
+
                 <div class="image_container">
                     <img src="{{recipe.image}}" alt="{{recipe.title}}">
                 </div>
@@ -30,8 +31,9 @@
                 </div>
                 <div class="card_info">
                     <p>{{recipe.author}}o</p>
-
                 </div>
+                <input type="text" name="id" value="{{recipe.id}}">
+                
 
             </div>
         {% endfor %}

@@ -1,16 +1,14 @@
 
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card')
 
 for (let i = 0; i< cards.length; i++ ){
-
+    let recipeId = cards[i].lastElementChild.value
+    console.log(recipeId)
     cards[i].addEventListener("click", function(){
-        window.location.href = `/recipes/${i}`
+        window.location.href = `/recipes/${recipeId}`
     })
 }
 
-
-
-// hiden and show button
 
 const hideShow = document.querySelectorAll('.btn-show');
 const recipeInfo = document.querySelectorAll('.recipe-info')
