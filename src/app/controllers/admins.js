@@ -64,43 +64,18 @@ module.exports = {
     },
 
     put(req, res){
-        console.log(req.body)
+        
         Admin.update(req.body, function(){
-
         return res.redirect(`/admin/recipes/${req.body.id}`)
         })
-    
-
-    // const updateRecipe = {
-    //     ...recipe,
-    //     ...req.body
-    // }
-    
-
-    // data.recipes[recipeIndex] = updateRecipe
-
-    // fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
-    //     if(err) return res.send("Write Error.")
-
-   
-    // })
-
 
     },
 
     delete(req, res){
-        const recipeIndex = req.params.index
 
-        data.recipes.splice([recipeIndex])
-    
-        const newData = data
-    
-        fs.writeFile("data.json", JSON.stringify(newData, null, 2), function(err){
-            if(err) return res.send("Write Error.")
-    
+        Admin.delete(req.body.id, function(){
             return res.redirect(`/admin/recipes`)
         })
-    
     }
 }
 

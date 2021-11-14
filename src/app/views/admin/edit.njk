@@ -24,7 +24,12 @@
 
 </form>
 
-<form action="/admin/recipes/{{recipeIndex}}?_method=DELETE" method="post"id="delete-form"></form>
+<form action="/admin/recipes/{{recipe.id}}?_method=DELETE" method="post"id="delete-form">
+    <input 
+        type="hidden" 
+        name="id" 
+        value="{{ recipe.id }}">
+</form>
 
 
 {% endblock %}
