@@ -20,14 +20,16 @@ module.exports = {
         return res.render("users/sobre")
     },
     recipeIndex(req, res){
+
         const recipeIndex = req.params.index;
-        const recipe = data.recipes[recipeIndex]   
-        
+     User.showRecipe(recipeIndex, function(recipe){
         if (!recipe){
             return res.send("Recipe not found")
         }
-        
-        return res.render("users/preparo", {recipe})
+            return res.render("users/preparo", {recipe})
+     })
+
+
     }
 }
 

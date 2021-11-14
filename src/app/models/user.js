@@ -7,11 +7,11 @@ module.exports = {
             callback(results.rows)
         })
     },
-    showRecipe(data, callback){
+    showRecipe(id, callback){
     
         db.query(`SELECT * FROM recipes WHERE ID = $1`, [id], function(err, results){
             if(err) throw`Database err ${err}`
-            console.log(results)
+            callback(results.rows[0])
         } )
     }
 }
