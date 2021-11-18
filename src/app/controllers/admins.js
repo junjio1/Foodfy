@@ -8,13 +8,14 @@ module.exports = {
     index(req, res){
 
         Admin.all(function(recipes) {
-            return res.render("admin/index", {recipes})
+            return res.render("admin/recipes/index", {recipes})
         })  
 
     },
     create(req, res){
 
-        return res.render("admin/create")
+        return res.render("admin/recipes/create")
+        
     },
     show(req, res){
 
@@ -24,7 +25,7 @@ module.exports = {
              if (!recipe){
                  return res.send("Recipe not found")
                 }
-             return res.render("admin/show", {recipe, recipeIndex})
+             return res.render("admin/recipes/show", {recipe, recipeIndex})
         })
     
         
@@ -39,7 +40,8 @@ module.exports = {
             if (!recipe){
                 return res.send("Recipe not found")
                }
-               return res.render("admin/edit", {recipe, recipeIndex})
+               return res.render("admin/recipes/edit", {recipe, recipeIndex})
+            
        })
         
 
@@ -77,5 +79,8 @@ module.exports = {
             return res.redirect(`/admin/recipes`)
         })
     }
+
+// admin chefs
+
 }
 

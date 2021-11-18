@@ -1,0 +1,55 @@
+{% extends "layoutAdmin.njk" %}
+
+{% block content %}
+
+
+    <div class="form_header">   
+        <h2>Receita {{recipe.title }}</h2> 
+        <div>
+            <a href="{{recipeIndex}}/edit" class="button">Editar Receita</a>
+        </div>
+    </div>
+
+<section class="recipes">
+                <div class="recipe-image">
+                        <img src="{{recipe.image}}" alt="{{recipe.title}}"
+                        style="background: no-repeat center center/ cover;">
+                </div>
+                <div class="recipe-title">
+                        <h2>{{recipe.title}}</h2>
+                </div>
+                <div class="recipe-author">
+                        <p>Por {{recipe.author}}</p>
+                </div>
+
+                <div class="recipes">
+                        <h2>Ingredientes </h2> 
+                        <ul class="lista recipe-info">
+                         {% for ingredient in recipe.ingredients %}
+                            <li>{{ingredient}}</li>
+                         {% endfor %}
+                        </ul>
+                        
+                </div>
+
+                <div class="recipes">
+                        <h2>Modo de Preparo</h2>
+                         <ul class='lista recipe-info'>
+                        {% for prep in recipe.preparation %}
+                                <li>{{prep}}</li>
+                        {% endfor %}
+                </div>
+
+
+
+                <div class="recipes">
+                  <h2>Informacoes Adicionais</h2>
+                  <p class='recipe-info' >{{recipe.information}}</p>
+                </div>
+
+        </section>
+
+
+{% endblock %}
+
+

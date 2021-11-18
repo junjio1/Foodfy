@@ -1,8 +1,17 @@
+// 
+const currentPage = location.pathname
+const links = document.querySelectorAll(".links")
 
+for (link of links){
+    if (currentPage.includes(link.getAttribute("href"))) {
+        link.classList.add("active")
+    }
+}
+
+// Click card 
 const cards = document.querySelectorAll('.card_admin > div > span');
 
 for (let i = 0; i< cards.length; i++ ){
-
     cards[i].addEventListener("click", function(){
         window.location.href = `recipes/${i}`
     })

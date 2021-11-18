@@ -1,0 +1,38 @@
+{% extends "layoutAdmin.njk" %}
+
+{% block content %}
+
+
+    <div class="form_header">   
+        <h2>Gerenciar Chefs</h2> 
+        <div>
+            <a class="button" href="/admin/chefs/create">Cadastra Chef</a>
+        </div>
+    </div>
+
+<section id="cards" class="admin">
+
+        {% for recipe in recipes %}
+            <div class="card_admin" id="{{recipes.recipe_title}}">
+                <div class="image_container_admin">
+                    <img src="{{recipe.image}}" alt="{{recipe.title}}">
+                </div>
+                <div class="card_content_admin">
+                    <h2>{{recipe.title}}</h2>
+                
+                <div class="card_info_admin">
+                    <p>{{recipe.author}}</p>
+                </div>
+                <a href="/admin/recipes/{{recipe.id}}">Visualizar</a>
+                
+                </div>
+                
+
+            </div>
+            {% endfor %}   
+    </section>
+  
+
+{% endblock %}
+
+
