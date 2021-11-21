@@ -330,6 +330,29 @@ form .item:last-child:last-child div {
 }
 
 
+/* Chefs Show index*/
+
+#cards.chefs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    cursor: default;
+}
+.image_container_chef{
+    align-self: center;
+    justify-self: center;
+}
+.image_container_chef img{
+    width: 64px;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 64px;
+    image-rendering: pixelated;
+}
+
+
+
 
 
 

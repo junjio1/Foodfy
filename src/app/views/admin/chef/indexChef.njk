@@ -10,27 +10,24 @@
         </div>
     </div>
 
-<section id="cards" class="admin">
+<section id="cards" class="chefs">
 
-        {% for recipe in recipes %}
-            <div class="card_admin" id="{{recipes.recipe_title}}">
-                <div class="image_container_admin">
-                    <img src="{{recipe.image}}" alt="{{recipe.title}}">
+        {% for chef in chefs %}
+        
+            <div class="card_admin" id="{{chef.name}}">
+                <div class="image_container_chef">
+                    <img src="{{chef.avatar_url}}" alt="{{chef.name}}">
                 </div>
                 <div class="card_content_admin">
-                    <h2>{{recipe.title}}</h2>
+                    <h2>{{chef.name}}</h2>
                 
-                <div class="card_info_admin">
-                    <p>{{recipe.author}}</p>
-                </div>
-                <a href="/admin/recipes/{{recipe.id}}">Visualizar</a>
+                <a href="/admin/chefs/{{chef.id}}">Visualizar</a>
                 
                 </div>
-                
 
             </div>
             {% endfor %}   
-    </section>
+</section>
   
 
 {% endblock %}
