@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<form method="POST" action="/admin/chef/{{chef.id}}?_method=PUT" id="create_recipe" >
+<form method="POST" action="/admin/chef/{{chef.id}}?_method=PUT" id="create_chef" >
 <div class="form_header">   
         <h2>Editar Chef</h2> 
         <div>
@@ -28,7 +28,7 @@
     <input 
         type="hidden" 
         name="id" 
-        value="{{ recipe.id }}">
+        value="{{ chef.id }}">
 </form>
 
 

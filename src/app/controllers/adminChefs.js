@@ -1,8 +1,9 @@
+const db = require("../../config/db")
 const Chef = require("../models/chef")
 
 module.exports = {
     index(req, res){
-        Chef.Show(function(chefs){
+        Chef.show(function(chefs){
             res.render("admin/chefs/indexChef", {chefs})
         })
 
@@ -12,7 +13,7 @@ module.exports = {
     },
     show(req, res){
         const id = req.params.index
-        Chef.Find(id, function(chefs){
+        Chef.find(id, function(chefs){
 
             if(!chefs){
                 return res.send("Chef nao localizado")
@@ -22,7 +23,11 @@ module.exports = {
         
     },
     edit(req, res){
-        res.render("admin/chefs/editChef")
+        const id = req.params.index
+        Chef.find(id, function(chef){
+            res.render("admin/chefs/editChef", {chef})
+        })
+        
     },
     post(req, res){
 
@@ -34,15 +39,22 @@ module.exports = {
             }
         }
 
-        Chef.Create(req.body, function(chef){
+        Chef.create(req.body, function(chef){
              res.redirect(`chefs/${chef.id}`)
         })
        
     },
     put(req, res){
+        console.log(req.params.index)
+        // Chef.edit(req.body, function(){
+            
+        // })
         res.render("admin/chefs/indexChef")
     },
     delete(req, res){
-        res.render("admin/chefs/indexChef")
+        console.log(req.body.id)
+        Chef.delete(req.body.id, function(){
+            return res.redirect("/admin/chefs")
+        })
     },
 }

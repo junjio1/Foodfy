@@ -35,18 +35,13 @@ module.exports = {
 
     const recipeIndex = req.params.index; 
 
-
         Admin.find(recipeIndex , function(recipe){
             if (!recipe){
                 return res.send("Recipe not found")
                }
                return res.render("admin/recipes/edit", {recipe, recipeIndex})
-            
        })
         
-
-    
-
     },
 
     post(req, res){
