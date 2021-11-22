@@ -4,22 +4,22 @@
 
 
     <div class="form_header">   
-        <h2>Receita {{recipe.title }}</h2> 
+        <h2>Chef: {{chefs.name}}</h2> 
         <div>
-            <a href="{{recipeIndex}}/edit" class="button">Editar Receita</a>
+            <a href="{{chefs.id}}/edit" class="button">Editar Chef</a>
         </div>
     </div>
 
 <section class="recipes">
                 <div class="recipe-image">
-                        <img src="{{recipe.image}}" alt="{{recipe.title}}"
+                        <img src="{{chefs.avatar_url}}" alt="{{chefs.name}}"
                         style="background: no-repeat center center/ cover;">
                 </div>
                 <div class="recipe-title">
-                        <h2>{{recipe.title}}</h2>
+                        <h2>{{chefs.name}}</h2>
                 </div>
                 <div class="recipe-author">
-                        <p>Por {{recipe.author}}</p>
+                        <p>numero de receitas {{recipe.author}}</p>
                 </div>
 
                 <div class="recipes">
