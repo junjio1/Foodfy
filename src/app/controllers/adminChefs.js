@@ -45,14 +45,12 @@ module.exports = {
        
     },
     put(req, res){
-        console.log(req.params.index)
-        // Chef.edit(req.body, function(){
-            
-        // })
-        res.render("admin/chefs/indexChef")
+        Chef.edit(req.body, function(){
+            res.redirect(`/admin/chefs/${req.body.id}`)
+        })
+        
     },
     delete(req, res){
-        console.log(req.body.id)
         Chef.delete(req.body.id, function(){
             return res.redirect("/admin/chefs")
         })

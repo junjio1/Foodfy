@@ -45,13 +45,13 @@ module.exports={
         `
         const values = [
             data.name,
-            data.avata_url,
+            data.avatar_url,
             data.id
         ]
 
         db.query(query, values, function(err , results){
             if(err) throw`Database err ${err}`
-            console.log(results)
+            callback()
         } )
     },
     delete(id , callback){
