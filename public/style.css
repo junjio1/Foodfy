@@ -330,7 +330,7 @@ form .item:last-child:last-child div {
 }
 
 
-/* Chefs Show index*/
+/* Chefs index*/
 
 #cards.chefs {
     display: grid;
@@ -349,6 +349,17 @@ form .item:last-child:last-child div {
     background-size: cover;
     height: 64px;
     image-rendering: pixelated;
+}
+
+/* Chefs Show */
+
+.chef-image img {
+    border-radius: 100%;
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 
