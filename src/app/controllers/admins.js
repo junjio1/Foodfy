@@ -15,7 +15,6 @@ module.exports = {
     create(req, res){
         
         Admin.findChef(function(chefs){
-            console.log(chefs)
             return res.render("admin/recipes/create", {chefs})
         })
         
@@ -39,6 +38,7 @@ module.exports = {
 
     const recipeIndex = req.params.index; 
 
+
         Admin.find(recipeIndex , function(recipe){
             if (!recipe){
                 return res.send("Recipe not found")
@@ -56,6 +56,8 @@ module.exports = {
                  return res.send("Preencha todos os campos")
             }
         }
+
+        console.log(req.body)
 
         Admin.create(req.body, function(recipes){
             return res.redirect(`/admin/recipes/${recipes.id}`)

@@ -24,11 +24,12 @@
     <div class="item">
         <div>Chef</div>
         
-            <select name="chefs" id="chefs">
+            <select name="chef_id" id="chef">
                 <option value="" disabled selected>Selecione Chef</option>
                 {% for chef in chefs%}
-                <option value="{{chef.id}}">{{chef.name}}</option>
+                <option value="{{chef.id}}" >{{chef.name}}</option>
                 {%endfor%}
+                <option value="{{recipe.chef_id}}" selected >{{recipe.chef_name}}</option>
             </select>
         
     </div>

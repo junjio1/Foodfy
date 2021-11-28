@@ -5,7 +5,9 @@ const {date} = require("../../lib/utils")
 module.exports = {
     all(callback){
 
-        db.query(`SELECT * FROM recipes`, function(err, results ){
+        db.query(`SELECT recipes.*, chefs.name as chef_name
+        FROM recipes 
+        LEFT JOIN chefs ON (recipes.chef_id = chefs.id)`, function(err, results ){
             if(err) throw`Database err ${err}`
             callback(results.rows)
         })
@@ -16,7 +18,7 @@ module.exports = {
         INSERT INTO recipes (
             image,
             title,
-            author,
+            chef_id,
             ingredients,
             preparation,
             information,
@@ -28,7 +30,7 @@ module.exports = {
         const values = [
             data.image,
             data.title,
-            data.author,
+            data.chef_id,
             data.ingredients,
             data.preparation,
             data.information,
@@ -43,7 +45,10 @@ module.exports = {
         } )
     },
     find( id,callback){
-        db.query(`SELECT * FROM recipes WHERE id = $1 `,[id] , function(err, results){
+        db.query(`SELECT recipes.*, chefs.name as chef_name
+        FROM recipes 
+        LEFT JOIN chefs ON (recipes.chef_id = chefs.id)
+        WHERE recipes.id=$1`,[id] , function(err, results){
             if(err) throw`Database err ${err}`
             callback(results.rows[0])
             
@@ -55,7 +60,7 @@ module.exports = {
         UPDATE recipes SET
             image = ($1),
             title = ($2),
-            author = ($3),
+            chef_id = ($3),
             ingredients = ($4),
             preparation = ($5),
             information = ($6),
@@ -66,7 +71,7 @@ module.exports = {
         const values = [
             data.image,
             data.title,
-            data.author,
+            data.chef_id,
             data.ingredients,
             data.preparation,
             data.information,
