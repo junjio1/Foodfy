@@ -86,6 +86,12 @@ module.exports = {
             if(err) throw`Database err ${err}`
             return callback()
         })
-    }
+    },
+    findChef(callback){
 
+        db.query(`SELECT id, name  FROM chefs`, function(err, results){
+            if(err) throw (`database err ${err}`)
+            callback(results.rows)
+        })
+    }
 }

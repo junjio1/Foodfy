@@ -13,8 +13,12 @@ module.exports = {
 
     },
     create(req, res){
-
-        return res.render("admin/recipes/create")
+        
+        Admin.findChef(function(chefs){
+            console.log(chefs)
+            return res.render("admin/recipes/create", {chefs})
+        })
+        
         
     },
     show(req, res){
