@@ -22,32 +22,32 @@
                         <p>{{chefs.total_recipes}} receitas</p>
                 </div>
 
-                <div class="recipes">
-                        <h2>Ingredientes </h2> 
-                        <ul class="lista recipe-info">
-                         {% for ingredient in recipe.ingredients %}
-                            <li>{{ingredient}}</li>
-                         {% endfor %}
-                        </ul>
+        
+                <h2>Receitas </h2> 
+                
+        <section id="cards" class="admin">
+        {% for recipe in recipes %}
+                
+        <div class="card_admin" id="{{recipe.id}}">
+
+                <div class="image_container_admin">
+                        <img src="{{recipe.image}}" alt="{{recipe.title}}">
+                </div>
+                <div class="card_content_admin">
+                        <h2>{{recipe.title}}</h2>
+                
+                <div class="card_info_admin">
+                        <p>por {{chefs.name}}</p>
+                </div>
+                        <a href="/admin/recipes/{{recipe.id}}">Visualizar</a>   
+                </div>
                         
-                </div>
 
-                <div class="recipes">
-                        <h2>Modo de Preparo</h2>
-                         <ul class='lista recipe-info'>
-                        {% for prep in recipe.preparation %}
-                                <li>{{prep}}</li>
-                        {% endfor %}
-                </div>
-
-
-
-                <div class="recipes">
-                  <h2>Informacoes Adicionais</h2>
-                  <p class='recipe-info' >{{recipe.information}}</p>
-                </div>
-
+        </div>
+        {% endfor %}
         </section>
+
+</section>
 
 
 {% endblock %}

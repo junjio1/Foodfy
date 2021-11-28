@@ -13,12 +13,21 @@ module.exports = {
     },
     show(req, res){
         const id = req.params.index
+
+
         Chef.find(id, function(chefs){
+            
+            let recipes = []
+            
+            for (recipe in chefs.recipes){
+                recipes.push(chefs.recipes[recipe])
+            }
+    
 
             if(!chefs){
                 return res.send("Chef nao localizado")
             }
-            res.render("admin/chefs/showChef", {chefs})
+            res.render("admin/chefs/showChef", {chefs, recipes})
         })
         
     },
