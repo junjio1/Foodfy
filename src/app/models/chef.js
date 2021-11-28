@@ -33,7 +33,6 @@ module.exports={
     find(id ,callback){
         
 
-// JSON_agg(recipes) AS recipes,
         db.query(`SELECT chefs.*,
         JSON_agg(JSON_BUILD_OBJECT ('id', recipes.id, 'image', recipes.image, 'title', recipes.title)) AS recipes,
         COUNT(recipes) AS total_recipes

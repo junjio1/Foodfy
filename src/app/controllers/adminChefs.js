@@ -14,16 +14,14 @@ module.exports = {
     show(req, res){
         const id = req.params.index
 
-
         Chef.find(id, function(chefs){
-            
+
             let recipes = []
             
             for (recipe in chefs.recipes){
                 recipes.push(chefs.recipes[recipe])
             }
     
-
             if(!chefs){
                 return res.send("Chef nao localizado")
             }
@@ -33,6 +31,7 @@ module.exports = {
     },
     edit(req, res){
         const id = req.params.index
+        
         Chef.find(id, function(chef){
             res.render("admin/chefs/editChef", {chef})
         })
@@ -60,6 +59,12 @@ module.exports = {
         
     },
     delete(req, res){
+        const recipes = req.body.totalRecipes
+
+        if(!recipes == 0){
+            return res.send("Delete todas as receitas do chef")
+        }
+
         Chef.delete(req.body.id, function(){
             return res.redirect("/admin/chefs")
         })
