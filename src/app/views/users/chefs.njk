@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block  head %}
+<title>Chefs</title>
+{% endblock %}
+
+{% block content %}
+
+    <section id="cards"class="chefs">
+
+        {% for chef in chefs %}
+            <div class="card_admin" id="{{chef.name}}">
+                <div class="image_container_chef">
+                    <img src="{{chef.avatar_url}}" alt="{{chef.name}}">
+                </div>
+                <div class="card_content_chefs">
+                    <h2>{{chef.name}}</h2>
+                    <p>{{chef.total_recipes}} receitas</p>
+                </div>
+                <input type="hidden" name="id" value="{{recipe.id}}">
+
+            </div>
+            {% endfor %}
+        
+
+        
+    </section>
+
+{% endblock %}

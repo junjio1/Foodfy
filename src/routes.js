@@ -12,6 +12,7 @@ const chefs = require("./app/controllers/adminChefs")
 routes.get('/', users.indexPage)
 routes.get("/recipes", users.recipePage)
 routes.get("/sobre", users.sobrePage)
+routes.get("/chefs", users.chefsPage)
 routes.get("/recipes/:index", users.recipeIndex)
 
 

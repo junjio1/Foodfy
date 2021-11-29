@@ -30,6 +30,12 @@ module.exports = {
      })
 
 
+    },
+    chefsPage(req, res){
+        
+        User.showChef(function(chefs){
+            res.render("users/chefs" ,{chefs})
+        })
     }
 }
 
