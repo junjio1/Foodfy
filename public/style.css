@@ -389,8 +389,11 @@ form .item:last-child:last-child div {
 
 
 
-
-
+.container-flex {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
 
 footer p{
@@ -400,5 +403,6 @@ footer p{
     color: #999999;
     text-align: center;
     padding: 10px;
+    
 }
 

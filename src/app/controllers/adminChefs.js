@@ -21,7 +21,10 @@ module.exports = {
             for (recipe in chefs.recipes){
                 recipes.push(chefs.recipes[recipe])
             }
-    
+                if(recipes[0].id === null){
+                    recipes = []        
+                  }
+
             if(!chefs){
                 return res.send("Chef nao localizado")
             }
