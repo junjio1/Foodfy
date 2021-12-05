@@ -390,7 +390,7 @@ form .item:last-child:last-child div {
 
 
 .container-flex {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
