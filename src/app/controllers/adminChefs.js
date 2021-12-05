@@ -63,8 +63,7 @@ module.exports = {
     },
     delete(req, res){
         const recipes = req.body.totalRecipes
-
-        if(!recipes == 0){
+        if(recipes >= 1){
             return res.send("Delete todas as receitas do chef")
         }
 

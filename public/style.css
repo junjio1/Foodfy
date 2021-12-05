@@ -6,10 +6,15 @@ body{
 }
 p{
     font-size: 18px;
-color: #444444;
-line-height: 28px;
-    
+    color: #444444;
+    line-height: 28px;
 }
+
+.container-flex {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
 .navbar{
      font-family: Roboto;
@@ -389,11 +394,7 @@ form .item:last-child:last-child div {
 
 
 
-.container-flex {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+
 
 
 footer p{

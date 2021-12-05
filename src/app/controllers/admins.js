@@ -40,9 +40,11 @@ module.exports = {
 
 
         Admin.find(recipeIndex , function(recipe){
+
             if (!recipe){
                 return res.send("Recipe not found")
                }
+               
                return res.render("admin/recipes/edit", {recipe, recipeIndex})
        })
         
@@ -57,7 +59,6 @@ module.exports = {
             }
         }
 
-        console.log(req.body)
 
         Admin.create(req.body, function(recipes){
             return res.redirect(`/admin/recipes/${recipes.id}`)
