@@ -8,7 +8,6 @@ module.exports = {
         `, function(err , results){
             if(err) throw`Database err ${err}`
             callback(results.rows)
-            console.log(results.rows)
         })
     },
     showRecipe(id, callback){

@@ -29,7 +29,10 @@
                 {% for chef in chefs%}
                 <option value="{{chef.id}}" >{{chef.name}}</option>
                 {%endfor%}
+                {% if  recipe.chef_id %}
                 <option value="{{recipe.chef_id}}" selected >{{recipe.chef_name}}</option>
+                {% endif %}
+                
             </select>
         
     </div>
