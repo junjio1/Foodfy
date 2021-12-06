@@ -35,6 +35,6 @@ const recipeInfo = document.querySelectorAll('.recipe-info')
 const currentPage = location.pathname
 const searchBox = document.querySelector(".search")
 
-if (currentPage == "/Chefs"){
+if (currentPage == "/chefs"){
     searchBox.style.display = "none"
 }

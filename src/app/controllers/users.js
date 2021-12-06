@@ -5,16 +5,28 @@ const User = require("../models/user")
 
 module.exports = {
     indexPage(req , res){
-        User.all(function(recipes){
-            return res.render("users/index",{recipes})
-        })
+        
+
+            User.all(function(recipes){
+                return res.render("users/index",{recipes}) 
+            })
+
         
     },
     recipePage(req , res) {
-        User.all(function(recipes){
-            return res.render("users/recipes", {recipes})
-        })
-        
+
+        const {filter} = req.query
+        console.log(filter)
+
+        if(filter){
+            User.findBy(filter, function(recipes){
+                return res.render("users/recipes",{recipes , filter}) 
+            })
+        }else{
+            User.all(function(recipes){
+                return res.render("users/recipes",{recipes}) 
+            })
+        }
     },
     sobrePage(req, res){
         return res.render("users/sobre")
