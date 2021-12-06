@@ -14,21 +14,20 @@ module.exports = {
     show(req, res){
         const id = req.params.index
 
-        Chef.find(id, function(chefs){
-
+        Chef.find(id, function(chef){
             let recipes = []
             
-            for (recipe in chefs.recipes){
-                recipes.push(chefs.recipes[recipe])
+            for (recipe in chef.recipes){
+                recipes.push(chef.recipes[recipe])
             }
                 if(recipes[0].id === null){
                     recipes = []        
                   }
 
-            if(!chefs){
+            if(!chef){
                 return res.send("Chef nao localizado")
             }
-            res.render("admin/chefs/showChef", {chefs, recipes})
+            res.render("admin/chefs/showChef", {chef, recipes})
         })
         
     },

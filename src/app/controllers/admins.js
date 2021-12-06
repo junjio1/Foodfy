@@ -40,7 +40,6 @@ module.exports = {
 
 
         Admin.find(recipeIndex , function(recipe){
-            console.log(recipe)
             if (!recipe){
                 return res.send("Recipe not found")
                }
