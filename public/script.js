@@ -1,4 +1,6 @@
 
+// CARDS RECIPES
+
 const cards = document.querySelectorAll('.card')
 
 for (let i = 0; i< cards.length; i++ ){
@@ -8,6 +10,8 @@ for (let i = 0; i< cards.length; i++ ){
     })
 }
 
+
+// ADD AND SHOW
 
 const hideShow = document.querySelectorAll('.btn-show');
 const recipeInfo = document.querySelectorAll('.recipe-info')
@@ -25,3 +29,12 @@ const recipeInfo = document.querySelectorAll('.recipe-info')
         }
         
     })} 
+
+    // HIDE SEARCH BOX FROM CHEFS PAGE
+
+const currentPage = location.pathname
+const searchBox = document.querySelector(".search")
+
+if (currentPage == "/Chefs"){
+    searchBox.style.display = "none"
+}

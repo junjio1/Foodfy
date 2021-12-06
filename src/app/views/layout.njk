@@ -22,11 +22,16 @@
         <a class="links" href="/recipes">Receitas</a>
         <a class="links" href="/Chefs">Chefs</a>
         
-        <div class="search">
-            <form action="" method="post">
-                <input type="text" placeholder="Busque uma receita" >
+        <div class="search" >
+            <form action="/recipes" method="get" id="search" >
+                <input 
+                    type="text" 
+                    placeholder="Busque uma receita" 
+                    name= "filter"
+                    >
+                    
             </form>
-            <button type="submit">Buscar</button> 
+             <button  form="search" type="submit">Buscar</button>
         </div>
        
         
