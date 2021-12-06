@@ -16,8 +16,6 @@ module.exports = {
     recipePage(req , res) {
 
         const {filter} = req.query
-        console.log(filter)
-
         if(filter){
             User.findBy(filter, function(recipes){
                 return res.render("users/recipes",{recipes , filter}) 
