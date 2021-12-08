@@ -15,16 +15,32 @@ module.exports = {
     },
     recipePage(req , res) {
 
-        const {filter} = req.query
-        if(filter){
-            User.findBy(filter, function(recipes){
+        let {filter, page , limit} = req.query
+
+        page = page || 1
+        limit = limit || 6
+        let offset = limit * (page - 1)
+
+        const params = {
+            page,
+            limit,
+            offset,
+            callback(recipes){
                 return res.render("users/recipes",{recipes , filter}) 
-            })
-        }else{
-            User.all(function(recipes){
-                return res.render("users/recipes",{recipes}) 
-            })
+            }
         }
+
+        User.paginate(params)
+
+        // if(filter){
+        //     User.findBy(filter, function(recipes){
+        //         return res.render("users/recipes",{recipes , filter}) 
+        //     })
+        // }else{
+        //     User.all(function(recipes){
+        //         return res.render("users/recipes",{recipes}) 
+        //     })
+        // }
     },
     sobrePage(req, res){
         return res.render("users/sobre")
