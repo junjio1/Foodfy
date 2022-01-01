@@ -15,18 +15,25 @@ module.exports = {
     },
     recipePage(req , res) {
 
-        let {filter, page , limit} = req.query
+        let {filter, page , limit, total} = req.query
 
         page = page || 1
         limit = limit || 6
         let offset = limit * (page - 1)
 
         const params = {
+            filter,
             page,
             limit,
             offset,
+            total,
             callback(recipes){
-                return res.render("users/recipes",{recipes , filter}) 
+                const pagination = {
+                    filter,
+                    total : Math.ceil(recipes[0].total / limit),
+                    page,
+                }
+                return res.render("users/recipes",{recipes , filter, pagination}) 
             }
         }
 

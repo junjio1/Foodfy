@@ -404,10 +404,25 @@ form .item:last-child:last-child div {
 }
 
 
+/* PAGINATION  */
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
 
+.pagination a ,
+.pagination span {
+    margin: 6px;
+    text-decoration: none;
+    color: #6558C3;
+}
 
-
+.pagination a:hover {
+    filter: brightness(0.3);
+    border-bottom: 1px solid #6558C3;
+}
 
 
 

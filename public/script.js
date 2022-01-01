@@ -1,6 +1,7 @@
 
 // CARDS RECIPES
 
+
 const cards = document.querySelectorAll('.card')
 
 for (let i = 0; i< cards.length; i++ ){
@@ -38,3 +39,4 @@ const searchBox = document.querySelector(".search")
 if (currentPage == "/chefs"){
     searchBox.style.display = "none"
 }
+

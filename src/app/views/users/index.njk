@@ -1,7 +1,5 @@
 {% extends "layout.njk" %}
 
-
-
 {% block content %}
 
 <header class="header_content">
@@ -12,53 +10,15 @@
                 profissionais do mundo inteiro</p>
         </div>
     </div>
-        <div>
-            <img src="assets/chef.png" alt="Chef">
-        </div>
+    <div>
+        <img src="assets/chef.png" alt="Chef">
+    </div>
 
     </header>
 
-    <section id="cards">
-
-        {% for recipe in recipes %}
-            <div  class="card" id="{{recipe.title}}">
-
-                <div class="image_container">
-                    <img src="{{recipe.image}}" alt="{{recipe.title}}">
-                </div>
-                <div class="card_content">
-                    <h2>{{recipe.title}}</h2>
-                </div>
-                <div class="card_info">
-                    <p>Por {{recipe.chef_name}}</p>
-                </div>
-                <input type="hidden" name="id" value="{{recipe.id}}">
-                
-
-            </div>
-        {% endfor %}
-
-    </section>
-
-        {# <section class="modal_overlay">
-        <div class="modal">
-            <div class="modal_image">
-                <img src="" alt="">
-            </div>
-            <div class="modal_content">
-                <h2></h2>
-                <p></p>
-            </div>
-            <div class="modal_close">
-                <p>Close</p>
-            </div>
-
-        </div>
-
-    </section> #}
-
-    {% endblock %}
+    {% include 'users/recipeCards.njk' %}
 
 
+{% endblock %}
 
     <script src="script.js"></script>
