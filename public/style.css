@@ -46,7 +46,11 @@ p{
     color: black;
     
 }
-
+.navbar_admin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .navbar_admin a {
     text-decoration: none;
     color: #999999;
