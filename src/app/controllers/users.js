@@ -5,17 +5,15 @@ const User = require("../models/user")
 
 module.exports = {
     indexPage(req , res){
-        
-
-            User.all(function(recipes){
-                return res.render("users/index",{recipes}) 
-            })
+        User.all(function(recipes){
+            return res.render("users/index",{recipes}) 
+        })
 
         
     },
     recipePage(req , res) {
 
-        let {filter, page , limit, total} = req.query
+        let {filter, page , limit} = req.query
 
         page = page || 1
         limit = limit || 6
@@ -25,12 +23,11 @@ module.exports = {
             filter,
             page,
             limit,
-            offset,
-            total,
+            offset,     
             callback(recipes){
                 const pagination = {
                     filter,
-                    total : Math.ceil(recipes[0].total / limit),
+                    total : Math.ceil(recipes[0]?.total / limit),
                     page,
                 }
                 return res.render("users/recipes",{recipes , filter, pagination}) 
@@ -38,16 +35,6 @@ module.exports = {
         }
 
         User.paginate(params)
-
-        // if(filter){
-        //     User.findBy(filter, function(recipes){
-        //         return res.render("users/recipes",{recipes , filter}) 
-        //     })
-        // }else{
-        //     User.all(function(recipes){
-        //         return res.render("users/recipes",{recipes}) 
-        //     })
-        // }
     },
     sobrePage(req, res){
         return res.render("users/sobre")
