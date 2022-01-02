@@ -7,9 +7,32 @@ const Admin = require("../models/admin")
 module.exports = {
     index(req, res){
 
-        Admin.all(function(recipes) {
-            return res.render("admin/recipes/index", {recipes})
-        })  
+        // Admin.all(function(recipes) {
+        //     return res.render("admin/recipes/index", {recipes})
+        // })  
+
+        let {filter, page , limit} = req.query
+
+        page = page || 1
+        limit = limit || 6
+        let offset = limit * (page - 1)
+
+        const params = {
+            filter,
+            page,
+            limit,
+            offset,     
+            callback(recipes){
+                const pagination = {
+                    filter,
+                    total : Math.ceil(recipes[0]?.total / limit),
+                    page,
+                }
+                return res.render("admin/recipes/index",{recipes , filter, pagination}) 
+            }
+        }
+
+        Admin.paginate(params)
 
     },
     create(req, res){

@@ -11,7 +11,7 @@ p{
 }
 
 .container-flex {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
   }
@@ -414,6 +414,7 @@ form .item:last-child:last-child div {
     display: flex;
     justify-content: center;
     justify-items: center;
+    margin-top: 16px;
 }
 
 .pagination a ,
