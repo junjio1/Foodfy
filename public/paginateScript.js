@@ -29,6 +29,7 @@ function paginate(selectedPage, totalPages){
 }
 
 const pagination = document.querySelector(".pagination")
+const filter = pagination.dataset.filter
 const page = +pagination.dataset.page
 const total = +pagination.dataset.total
 const pages = paginate(page, total)
@@ -38,6 +39,9 @@ let elemets = ""
 for (let page of pages){
     if(String(page).includes("...")){
         elemets +=  `<span>${page}<span>`
+    }else
+        if(filter){
+            elemets += `<a href="?page=${page}&filter=${filter}">${page}</a>`
     }else{
         elemets += `<a href="?page=${page}">${page}</a>`
     }
