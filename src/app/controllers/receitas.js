@@ -2,7 +2,7 @@
 
 // const data = require("../../../data.json")
 
-const Admin = require("../models/admin")
+const Receita = require("../models/receita")
 
 module.exports = {
     index(req, res){
@@ -32,12 +32,12 @@ module.exports = {
             }
         }
 
-        Admin.paginate(params)
+        Receita.paginate(params)
 
     },
     create(req, res){
         
-        Admin.findChef(function(chefs){
+        Receita.findChef(function(chefs){
             return res.render("admin/recipes/create", {chefs})
         })
         
@@ -47,7 +47,7 @@ module.exports = {
 
         const recipeIndex = req.params.index;
 
-        Admin.find(recipeIndex , function(recipe){
+        Receita.find(recipeIndex , function(recipe){
              if (!recipe){
                  return res.send("Recipe not found")
                 }
@@ -62,7 +62,7 @@ module.exports = {
     const recipeIndex = req.params.index; 
 
 
-        Admin.find(recipeIndex , function(recipe){
+        Receita.find(recipeIndex , function(recipe){
             if (!recipe){
                 return res.send("Recipe not found")
                }
@@ -82,7 +82,7 @@ module.exports = {
         }
 
 
-        Admin.create(req.body, function(recipes){
+        Receita.create(req.body, function(recipes){
             return res.redirect(`/admin/recipes/${recipes.id}`)
         })
             
@@ -91,7 +91,7 @@ module.exports = {
 
     put(req, res){
         
-        Admin.update(req.body, function(){
+        Receita.update(req.body, function(){
         return res.redirect(`/admin/recipes/${req.body.id}`)
         })
 
@@ -99,7 +99,7 @@ module.exports = {
 
     delete(req, res){
 
-        Admin.delete(req.body.id, function(){
+        Receita.delete(req.body.id, function(){
             return res.redirect(`/admin/recipes`)
         })
     }
