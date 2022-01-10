@@ -130,5 +130,5 @@ module.exports = {
             if(err) throw `Database err ${err}`
             callback(results.rows)
         })
-    }
+    },
 }

@@ -103,8 +103,5 @@ module.exports = {
             return res.redirect(`/admin/recipes`)
         })
     }
-
-// admin chefs
-
 }
 
