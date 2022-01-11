@@ -1,4 +1,4 @@
-// 
+
 const currentPage = location.pathname
 const links = document.querySelectorAll(".links")
 
@@ -80,3 +80,19 @@ for (let i = 0; i< cards.length; i++ ){
       }
 
       document.querySelector(".exclude-preparation").addEventListener("click", excludePrep);
+
+
+const PhotosUpload = {
+    uploadLimit:6,
+    handleFileInput(event) {
+      const {files :filesList} = event.target
+      const { uploadLimit } = PhotosUpload
+    
+
+      if(filesList.length > uploadLimit){
+        alert(`Evnie no maxio ${uploadLimit} imagens`)
+        event.preventDefault()
+        return
+      }
+    }
+}

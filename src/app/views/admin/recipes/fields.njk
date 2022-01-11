@@ -1,7 +1,8 @@
 
     <div class="item">
         <div>Imagem da Receita</div>
-        <div> 
+        
+        <div id="photos-upload-container"> 
             <div id="photos-upload">
                 <input 
                 id="photos-input"
@@ -9,12 +10,13 @@
                 name="image"
                 multiple
                 accept="image/*"
+                onchange="PhotosUpload.handleFileInput(event)"
              >
              <i class="material-icons">add</i>
             </div>
 
             <div id="photos-preview">
-
+                <img src="#" alt="">
             </div>
             
         </div>
@@ -23,7 +25,7 @@
     <div class="item">
         <div>Nome da Receita</div>
         <div> 
-            <input 
+            <input class="input-field"
                 type="text"
                 name="title"
                 value="{{recipe.title}}"
@@ -53,7 +55,7 @@
              
             {% for ingredient in recipe.ingredients %}
                 <div class="ingredient">
-                    <input 
+                    <input class="input-field"
                     type="text"
                     name="ingredients[]"
                     value="{{ingredient}}"
@@ -61,7 +63,7 @@
                 </div>
                 {% else %}
                 <div class="ingredient"> 
-                <input 
+                <input class="input-field"
                     type="text"
                     name="ingredients[]"
                 >
@@ -78,7 +80,7 @@
                 
                 {% for prep in recipe.preparation %}
                     <div class="preparation">
-                        <input 
+                        <input class="input-field"
                         type="text"
                         name="preparation[]"    
                         value="{{prep}}"
@@ -86,7 +88,7 @@
                     </div>
                     {% else %}
                     <div class="preparation"> 
-                    <input 
+                    <input class="input-field"
                         type="text"
                         name="preparation[]"    
                     >

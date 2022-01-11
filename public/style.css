@@ -339,7 +339,7 @@ button[type="submit"],
     background-color: #DC4747;
 }
 
-input, select{
+form .item .input-field, select{
     width: 100%;
     height: 32px;
     border: 1px solid #DDDDDD;
@@ -358,6 +358,7 @@ form .item:last-child:last-child div {
     width: 100%;
     border: 1px solid #DDDDDD;
     white-space: pre-wrap;
+    border-radius: 4px;
 }
 
 
@@ -430,6 +431,46 @@ form .item:last-child:last-child div {
     border-bottom: 1px solid #6558C3;
 }
 
+
+/* IMAGE UPLOAD  */
+
+.item #photos-upload-container{
+    display: grid;
+    grid-template-columns: 126px 1fr;
+    gap: 6px;
+
+} 
+
+.item #photos-upload{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+}
+.item #photos-upload i { 
+    padding: 50px;
+    align-items: center;
+    
+    cursor: pointer;
+
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+
+} 
+
+.item #photos-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+} 
 
 
 
