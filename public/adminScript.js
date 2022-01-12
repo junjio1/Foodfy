@@ -87,12 +87,32 @@ const PhotosUpload = {
     handleFileInput(event) {
       const {files :filesList} = event.target
       const { uploadLimit } = PhotosUpload
-    
+      
 
       if(filesList.length > uploadLimit){
         alert(`Evnie no maxio ${uploadLimit} imagens`)
         event.preventDefault()
         return
       }
+
+      Array.from(filesList).forEach(file => {
+        const reader = new FileReader()
+          
+        reader.onload = () => {
+          const image = new Image()
+          image.src = String(reader.result)
+
+          const div = document.createElement('div')
+          div.classList.add('photo')
+
+          div.onclick = () => alert('remover photo')
+
+          div.appendChild(image)
+
+          document.querySelector('#photos-preview').appendChild(div)
+        }
+        
+        reader.readAsDataURL(file)
+      })
     }
 }
