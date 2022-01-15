@@ -480,7 +480,7 @@ form .item #photos-preview{
     width: 100%;
 }
 
-form .item #photos-preview img {
+form .item #photos-preview img  {
     width: 100%;
     height: 130px;
     max-height: 130px;
@@ -488,7 +488,36 @@ form .item #photos-preview img {
     object-fit: cover;
 }
 
+#photos-preview .photo {
+    position: relative;
+}
 
+#photos-preview .photo i{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgba(255, 255, 255, 0.8);
+    color: red;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 500%;
+    cursor: pointer;
+
+    transition: opacity 200ms;
+
+    opacity: 0;
+}
+
+#photos-preview .photo:hover i{
+    opacity: 1;
+}
 
 
 
