@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<form method="POST" action="/admin/recipes/{{recipe.id}}?_method=PUT" id="create_recipe" >
+<form method="POST" action="/admin/recipes/{{recipe.id}}?_method=PUT" id="create_recipe" enctype="multipart/form-data">
 <div class="form_header">   
         <h2>Editar Receita</h2> 
         <div>

@@ -3,13 +3,9 @@
 // const data = require("../../../data.json")
 
 const Receita = require("../models/receita")
-
+const File = require("../models/File")
 module.exports = {
     index(req, res){
-
-        // Admin.all(function(recipes) {
-        //     return res.render("admin/recipes/index", {recipes})
-        // })  
 
         let {filter, page , limit} = req.query
 
@@ -57,10 +53,11 @@ module.exports = {
         
 
     },
-    edit(req, res){
+async edit(req, res){
+        
 
-    const recipeIndex = req.params.index; 
 
+        const recipeIndex = req.params.index; 
 
         Receita.find(recipeIndex , function(recipe){
             if (!recipe){
@@ -69,25 +66,38 @@ module.exports = {
                
                return res.render("admin/recipes/edit", {recipe, recipeIndex})
        })
-        
-    },
+},
 
-    post(req, res){
+async post(req, res){
         const keys = Object.keys(req.body)
 
         for (key of keys){
             if (req.body[key] == ""){
-                 return res.send("Preencha todos os campos")
+                    return res.send("Preencha todos os campos")
             }
         }
+        
+        // if(req.files.length == 0 ){
+        //     return res.send("please send a least one image ")
+        // }
+
+        const results = await Receita.create(req.body)
+        const recipeId = results.rows[0].id
 
 
-        Receita.create(req.body, function(recipes){
-            return res.redirect(`/admin/recipes/${recipes.id}`)
-        })
-            
+        // desafio upload imagem
+
+        // const filesPromise = req.files.map(file => File.create({...file}))
+        
+        
+        // await Promise.all(filesPromise)
+        
     
-    },
+        
+        return res.redirect(`/admin/recipes/${recipeId}`)
+        
+
+},
 
     put(req, res){
         
